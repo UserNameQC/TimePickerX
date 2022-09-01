@@ -1,4 +1,4 @@
-## 注意⚠️：已停止更新，原有版本jcenter库可以继续使用。建议直接下载源码引入 module 到自己项目改造。
+## 借用原项目，更改为AndroidX后重新上传的。
 
 ## Android-PickerView
 [![API](https://img.shields.io/badge/API-9%2B-brightgreen.svg)](https://android-arsenal.com/api?level=9) 
@@ -9,14 +9,7 @@
 
 ### [English Document](https://github.com/Bigkoo/Android-PickerView/blob/master/README-en.md)
 
-### 注意事项、详请使用方式、更新日志等，请查看 [Wiki文档](https://github.com/Bigkoo/Android-PickerView/wiki)
-**Wiki文档，Wiki文档，Wiki文档 !~ 重要的事情说三遍**
 
-#### 对于使用上有任何疑问或优化建议等，欢迎加入QQ群讨论交流技术问题。
-
-交流群1： 387051294（已满）
-
-交流群2： 219962328（已满）
 
 ## 介绍
 
@@ -91,7 +84,7 @@
 
 #### 1.添加Jcenter仓库 Gradle依赖：
 ```java
-compile 'com.contrarywind:Android-PickerView:4.1.9'
+implementation 'com.github.UserNameQC:TimePickerX:0.0.0'
 ```
 或者
 
