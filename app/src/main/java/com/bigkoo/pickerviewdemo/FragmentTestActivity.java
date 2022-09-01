@@ -18,6 +18,5 @@ public class FragmentTestActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_activity_main, new TestFragment());
         fragmentTransaction.commitAllowingStateLoss();
-
     }
 }
