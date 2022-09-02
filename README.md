@@ -191,4 +191,4 @@ pvOptions = new  OptionsPickerBuilder(this, new OptionsPickerView.OnOptionsSelec
         pvCustomOptions.setPicker(cardItem);//添加数据
 ```
 
-## 感谢原作者https://github.com/Bigkoo，希望不要夯我！
+## 感谢原作者https://github.com/Bigkoo 希望不要夯我！
