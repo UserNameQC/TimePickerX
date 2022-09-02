@@ -8,42 +8,13 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/Bigkoo/Android-PickerView.svg?style=social)](https://github.com/Bigkoo/Android-PickerView/stargazers) [![GitHub forks](https://img.shields.io/github/forks/Bigkoo/Android-PickerView.svg?style=social)](https://github.com/Bigkoo/Android-PickerView/network) [![GitHub watchers](https://img.shields.io/github/watchers/Bigkoo/Android-PickerView.svg?style=social)](https://github.com/Bigkoo/Android-PickerView/watchers)
 
-### [English Document](https://github.com/Bigkoo/Android-PickerView/blob/master/README-en.md)
 
 
 
 ## 介绍
 
-这是一款仿iOS的PickerView控件，有时间选择器和选项选择器，新版本的详细特性如下：
- 
-——TimePickerView  时间选择器，支持年月日时分，年月日，年月，时分等格式。   
-——OptionsPickerView  选项选择器，支持一，二，三级选项选择，并且可以设置是否联动 。
+具体使用请去原项目下查看，方法都一样，依赖更改一下即可。
 
-* 支持三级联动
-* 设置是否联动 
-* 设置循环模式
-* 支持自定义布局。
-* 支持item的分隔线设置。
-* 支持item间距设置。
-* 时间选择器支持起始和终止日期设定。
-* 支持“年，月，日，时，分，秒”，“省，市，区”等选项的单位（label）显示、隐藏和自定义。
-* 支持自定义文字、颜色、文字大小等属性
-* Item的文字长度过长时，文字会自适应缩放到Item的长度，避免显示不完全的问题
-* 支持Dialog 模式。
-* 支持自定义设置容器。
-* 实时回调。
-
-
-![TimePicker.gif](https://github.com/Bigkoo/Android-PickerView/blob/master/preview/timepicker.gif)
-![TimePickerNight.gif](https://github.com/Bigkoo/Android-PickerView/blob/master/preview/timepicker_night.gif)
-![lunar.gif](https://github.com/Bigkoo/Android-PickerView/blob/master/preview/lunar.gif)
-![XOffset.png](https://github.com/Bigkoo/Android-PickerView/blob/master/preview/Screen%20Shot%202017-11-09%20at%204.25.02%20PM.png)
-![Province.gif](https://github.com/Bigkoo/Android-PickerView/blob/master/preview/JsonData.gif)
-![CustomLayout.gif](https://github.com/Bigkoo/Android-PickerView/blob/master/preview/CustomLayout.gif)
-
-
-### 有兴趣研究3D滚轮效果的实现机制，希望把源码研究透彻的可以看看这篇博客：
-### [Android-PickerView系列之源码解析篇（二）](http://blog.csdn.net/qq_22393017/article/details/59488906)
 
 ### 使用注意事项
 * 注意：当我们进行设置时间的启始位置时，需要特别注意月份的设定
@@ -55,29 +26,6 @@
   startDate.set(2013,0,1);
   endDate.set(2020,11,1);
 
- #### V4.1.9 版本更新说明（2019-10-20）
-   - 修复: 农历 day 偶现越界的问题。
-   - 优化: 显示布局中英文默认大写问题。
-   - 新增: 最大可见项的数目提供API给开发者设置。(setItemVisibleCount())
-   - 新增: 滚轮从中间到两边透明度渐变，提供开关API设置。（isAlphaGradient(true)）
-   - 新增: 选中项圆形分割线样式。（DividerType.CIRCLE）
-
- #### V4.1.8 版本更新说明（2019-4-24）
- -  更新gradle版本， wheelview基础库由 compile 改为 api 依赖，避免gradle 5.0+版本无法引入。
- -  修复 setTextXOffset 赋值问题。
-  
- #### V4.1.7 版本更新说明（2019-1-10）
- -  修复 WheelView在初始化时，数据为空导致height=0，造成一直显示不出来的问题。
- -  新增取消按钮的点击事件监听入口。
- -  参数注解添加，规范数据类型。
- -  废弃setBackgroundId方法， 更新方法命名为 setOutSideColor。
-
-
-#### 更多历史版本详情，请查阅：[更新日志（4.x版本）](https://github.com/Bigkoo/Android-PickerView/wiki/更新日志（4.x版本）) 
-
-#### 方法名与参数请查阅：[方法名与参数说明文档](https://github.com/Bigkoo/Android-PickerView/wiki/%E6%96%B9%E6%B3%95%E5%90%8D%E4%B8%8E%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E%EF%BC%883.x%E7%89%88%E6%9C%AC%EF%BC%89)
-
-</br>
 
 ### **如何使用：**
 
@@ -86,17 +34,6 @@
 #### 1.添加Jcenter仓库 Gradle依赖：
 ```java
 implementation 'com.github.UserNameQC:TimePickerX:0.0.0'
-```
-或者
-
-#### Maven
-```
-<dependency>
-<groupId>com.contrarywind</groupId>
-<artifactId>Android-PickerView</artifactId>
-<version>4.1.9</version>
-<type>pom</type>
-</dependency>
 ```
 
 #### 2.在项目中添加如下代码：
@@ -253,17 +190,3 @@ pvOptions = new  OptionsPickerBuilder(this, new OptionsPickerView.OnOptionsSelec
                 .build();
         pvCustomOptions.setPicker(cardItem);//添加数据
 ```
-
-#### 5.对使用还有疑问的话，可参考demo代码
-[请戳我查看demo代码](https://github.com/Bigkoo/Android-PickerView/blob/master/app/src/main/java/com/bigkoo/pickerviewdemo/MainActivity.java)
-
-
-
-
-
-
-### Thanks
-
-- WheelView
-- [androidWheelView](https://github.com/weidongjian/androidWheelView/)
-
