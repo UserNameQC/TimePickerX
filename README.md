@@ -1,4 +1,5 @@
 ## 借用原项目，更改为AndroidX后重新上传的。
+## 原项目地址：
 
 ## Android-PickerView
 [![API](https://img.shields.io/badge/API-9%2B-brightgreen.svg)](https://android-arsenal.com/api?level=9) 
@@ -258,45 +259,7 @@ pvOptions = new  OptionsPickerBuilder(this, new OptionsPickerView.OnOptionsSelec
 
 
 
-#### 6.若只需要WheelView基础控件自行扩展实现逻辑，可直接添加基础控件库，Gradle 依赖：
- 
-```java
-compile 'com.contrarywind:wheelview:4.1.0'
-```
 
-#### WheelView 使用代码示例：
-
-xml布局：
-```xml
- <com.contrarywind.view.WheelView
-            android:id="@+id/wheelview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-```
-
-Java 代码：
-```java
-WheelView wheelView = findViewById(R.id.wheelview);
-
-        wheelView.setCyclic(false);
-
-        final List<String> mOptionsItems = new ArrayList<>();
-        mOptionsItems.add("item0");
-        mOptionsItems.add("item1");
-        mOptionsItems.add("item2");
-  
-        wheelView.setAdapter(new ArrayWheelAdapter(mOptionsItems));
-        wheelView.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(int index) {
-                Toast.makeText(MainActivity.this, "" + mOptionsItems.get(index), Toast.LENGTH_SHORT).show();
-            }
-        });
-```
-
-
-### 效果图（招行信用卡的“掌上生活”里面条件选择器他们用的就是我这个库，大家可以当实际项目参考）
-![](https://github.com/saiwu-bigkoo/Android-PickerView/blob/master/preview/pickerdemo_zhangshangshenghuo.gif)
 
 
 ### Thanks
@@ -304,19 +267,3 @@ WheelView wheelView = findViewById(R.id.wheelview);
 - WheelView
 - [androidWheelView](https://github.com/weidongjian/androidWheelView/)
 
-## License
-
-```
-Copyright 2014 Bigkoo
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
